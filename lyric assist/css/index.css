@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+.nav{
+    display: flex;
+    background-color: rgb(41, 110, 93);
+    padding: 15px 100px;
+    margin-top: -72px;
+}
+/* .nav ul{
+    margin-left: 100px;
+} */
+.nav li{
+    /* padding-left: 25px; */
+    margin-left: 25px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.nav li a{
+    padding: 5px 10px;
+    text-decoration: none;
+    /* color: white; */
+    border-radius: 15px;
+}
+#logo{
+    margin-left: 10px;
+}
+#logo img{
+    width: 60px;
+    padding-top: 3px; 
+    filter: invert(100%);
+}
+#nav ul li a:hover{
+    color:black;
+    background-color: white;
+}
+.active{
+    color: black;
+    background-color: white;
+}
+.disactive{
+    color: white;
+}
+.container{
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    background: #262626;
+    color: #fff;
+    font-size: 24px;
+    padding: 25px;
+}
+.container .p{
+    padding: 15px 150px;
+}
+.parallex{
+    background: url(../plugins/back1.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.parallex2{
+    background: url(../plugins/back.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.container .p button{
+    padding: 3px 12px;
+    margin-left: 14px;
+    background-color: #da4357;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    
+}
+.wrapper{
+    display: block-flex;
+}
+.wrapper .Dynamic-text{
+    margin-left: -42px;
+}
+.wrapper .Dynamic-text li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #da4357;
+
+}
+.Dynamic-text li span{
+    position: relative;
+}
+.wrapper .Dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #262626;
+    width: 100%;
+    border-left: 2px solid #da4357;
+    animation: typing 2s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.container .p button:hover{
+    background-color: #fff;
+    color: rgb(41, 110, 93);
+    animation: bubble 0.5s 1 forwards ;
+}
+@keyframes bubble {
+    from{
+        padding: 3px 12px;
+        font-size: 17px;
+        margin-left: 14px;
+        
+    }
+    to{
+        padding: 5px 15px;
+        font-size: 19px;
+        margin-left: 9px;
+    }
+}
+.logo{
+    width: 100px;
+    margin-bottom: 30px;
+    filter: invert();
+}
+footer{
+    width: 100%;
+    font-family: 'Acme', sans-serif;
+    bottom: unset;
+    margin-bottom: -2030px;
+    position: absolute; 
+    background: linear-gradient(to right, #151722, #250c04);
+    color: #fff;
+    padding: 100px 0 100px;
+    margin-left: -25px;
+    font-size: 17px;
+    line-height: 20px;
+
+
+} 
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis:25% ;
+    padding: 10px;
+
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -41px;
+    /* margin-right: 200px; */
+
+}
+.col ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+form{
+    padding-bottom: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    border: 0;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    margin: auto;
+    margin-bottom: -50px;
+    margin-top: 20px;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+
+}
+@media (min-width:350px) and (max-width:939px){
+    .nav{
+        height: 35px;
+    }
+    #logo img{
+        width: 50px;
+    }
+    .nav li{
+         display: none; 
+    }
+    .wrapper .Dynamic-text li{
+        font-size: 40px;
+    }
+    .container .p{
+        padding: 15px 50px;
+    }
+    footer{
+        margin-top: 25px; 
+        bottom: unset;
+     }
+     .col{
+         flex-basis:100% ;
+         /* padding: 10px; */
+     
+     }
+}

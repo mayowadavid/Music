@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics assist</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Cairo:wght@200&family=Indie+Flower&family=Shadows+Into+Light&family=Varela+Round&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Cairo:wght@200&family=Indie+Flower&family=Shadows+Into+Light&family=Varela+Round&family=Yuji+Boku&display=swap" rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Cairo:wght@200&family=Indie+Flower&family=Shadows+Into+Light&family=Varela+Round&family=Yuji+Boku&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header section -->
+    <header id="nav" class="navbar">
+        <div id="logo">
+
+            <img src="plugins/logo.png" alt="logo">
+        </div>
+        <ul class="nav">
+            <!-- navigation link -->
+            <li><a href="index.htm" class="disactive">Home</a></li>
+            <li><a href="mystudio.htm" class="disactive">My studio</a></li>
+            <li><a href="want_membership.htm" class="disactive">Want membership</a></li>
+            <li><a href="#" class="active">sign up/login</a></li>
+        </ul>
+    </header>
+    <div class="container1">
+        <h1>Lyrics assist</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora ullam, necessitatibus aperiam aut
+            recusandae rerum fugit provident amet, illum magnam! Harum molestias eaque error facere, iure tenetur
+            laudantium temporibus cumque reprehenderit, ducimus doloremque!</p>
+        <h4>Why you have to register?</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui tempora quidem atque dicta, modi delectus ut
+            provident quam autem numquam soluta, quis nemo hic natus alias. Minima labore magnam vero tenetur, illum aut
+            dolorum.</p>
+        <h3>services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat quod impedit consequatur
+            doloremque commodi atque, tempore corporis dolorem suscipit.</p>
+        <ul>
+            <li>Recordind</li>
+            <li>Personal studio</li>
+            <li>Tracks</li>
+        </ul>
+    </div>
+    <div class="container2">
+    <div class="container">
+        <div class="card">
+            <div class="innerbox" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form action="">
+
+                        <input type="email" class="input-box" placeholder="Your email address" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember me</span>
+                    </form>
+                    <button class="btn" type="button" onclick="openRegister()">I'm new here</button>
+                    <a href="#">Forgot password</a>
+                </div>
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form action="">
+                        <input type="text" class="input-box" placeholder="Your name" required>
+                        <input type="email" class="input-box" placeholder="Your email address" required>
+                        <input type="password" class="input-box" placeholder="Create Password" required>
+                        <input type="password" class="input-box" placeholder="Confirm Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember me</span>
+                    </form>
+                    <button class="btn" type="button" onclick="openLogin()">I've an account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="plugins/logo.png" alt="" class="logo">
+                <p>Tired of losing files, notes, & audio clips? Capture and organize every idea, no matter where you
+                    are.Write together in real-time. Communicate effortlessly with integrated comments, text chat, and
+                    video chat.</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div>
+                </h3>
+                <p>9/125, Sadar Bazar</p>
+                <p>Mathura, 281001</p>
+                <p>Uttar Pradesh, India</p>
+                <p class="email-id">chaturvedishubh650@gmail.com</p>
+                <h4>+91 - 7017881844</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a>My studio</a></li>
+                    <li><a href="want_membership.htm">Pricing</a></li>
+                    <li><a href="signup.htm">Being member</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div>
+                </h3>
+                <form class="form" action="#">
+
+                    <!-- <i class="far fa-envelope"></i> -->
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col">
+                <p>@Privacypolicy #262626</p>
+                <p>Developer- Shubh Chatuvedi</p>
+                <p>chaturvedishubh650@gmail.com</p>
+            </div>
+        </div>
+        <hr>
+    </footer>
+    <script>
+        var card = document.getElementById("card");
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin() {
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+</body>
+
+</html>
